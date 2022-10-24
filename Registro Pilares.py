@@ -4,7 +4,7 @@ from tkinter import messagebox
 import time
 from datetime import datetime
 sFileStamp = time.strftime('%Y%m%d')
-sFileName = '\Pilares_Registro\Data\PILARES' + sFileStamp + '.txt'
+sFileName = '\ProyectPilares\Data\PILARES' + sFileStamp + '.txt'
 f=open(sFileName, 'a')
 #Guardado de estado de tiempo
 sTimeStamp = time.strftime('%H%M%S')
