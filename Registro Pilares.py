@@ -34,6 +34,7 @@ if sFileStamp != sTmpFileStamp:
 def invoicePilares(themePilares):
 	messageP= messageTxt.get(1.0,"end-1c")
 	if len(messageP)!=0:
+		f=open(sFileName, 'a')
 		f.write(themePilares + ',' + messageP +','+ sTimeStamp +'\n')
 		print (themePilares + ',' + messageP +','+ sTimeStamp +'\n')
 		openNewW()
@@ -65,6 +66,7 @@ def initPilares(themePilares):
 	sTimeStamp = time.strftime('%H%M%S')
 	f.write(themePilares + ','+ sTimeStamp +'\n')
 	print (themePilares + ','+ sTimeStamp +'\n')
+	f.close()
 	windowInitP.deiconify()
 	win2.withdraw()
 
