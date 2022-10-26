@@ -71,7 +71,7 @@ def initPilares(themePilares):
 #Creación de Primer ventana
 windowInitP = tk.Tk()
 windowInitP.attributes('-topmost', True,'-fullscreen', True)
-windowInitP.geometry("800x600+0+0")
+#windowInitP.geometry("800x600+0+0")
 windowInitP.title("Registro Pilares")
 windowInitP.config(bg=c6)
 
